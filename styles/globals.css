@@ -27,3 +27,13 @@ button {
 section {
   min-height: 100vh;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+
+  font-size: 15px;
+  color: #7a7a7a;
+}

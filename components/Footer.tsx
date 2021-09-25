@@ -1,9 +1,7 @@
-import type { NextPage } from "next";
-
-const Footer: NextPage = () => {
+const Footer: React.FC = () => {
   return (
     <footer>
-      <span>footer component</span>
+      <span>nicholas cannon &copy;2021</span>
     </footer>
   );
 };
