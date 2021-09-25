@@ -1,0 +1,13 @@
+.hud {
+  position: fixed;
+  z-index: 99;
+  bottom: 0;
+  right: 0;
+
+  padding-bottom: 2rem;
+  padding-right: 2rem;
+}
+
+.hud > a {
+  margin-left: 2rem;
+}

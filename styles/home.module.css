@@ -4,7 +4,7 @@
 }
 
 .profilePic {
-  width: 80vw;
+  width: 100%;
   margin-top: 3rem;
 }
 
@@ -13,7 +13,7 @@
   font-size: 0.9rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .container {
     flex-direction: row;
     align-items: center;
