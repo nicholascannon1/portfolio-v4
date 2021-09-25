@@ -3,7 +3,17 @@
   align-items: center;
 }
 
+.containerLarge {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .profilePic {
   width: 80vw;
   margin-top: 3rem;
+}
+
+.profilePicLarge {
+  height: 60vh;
 }

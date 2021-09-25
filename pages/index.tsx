@@ -12,6 +12,7 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     const updateScreenSize = (size: number) => setScreenSize(calcScreenSize(size));
+    updateScreenSize(window.innerWidth);
     window.addEventListener("resize", () => updateScreenSize(window.innerWidth));
     () => window.removeEventListener("resize", () => updateScreenSize(window.innerHeight));
   }, []);
