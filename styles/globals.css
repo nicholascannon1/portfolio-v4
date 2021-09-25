@@ -40,3 +40,9 @@ footer {
   font-size: 15px;
   color: #7a7a7a;
 }
+
+@media (min-width: 768px) {
+  section {
+    padding: 4rem;
+  }
+}

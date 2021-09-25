@@ -3,7 +3,7 @@ import Section from "../components/Section";
 const SkillsSection: React.FC = () => {
   return (
     <Section title="Skills">
-      <h2>Skills</h2>
+      <h2>skills</h2>
     </Section>
   );
 };

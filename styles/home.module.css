@@ -3,17 +3,26 @@
   align-items: center;
 }
 
-.containerLarge {
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
-
 .profilePic {
   width: 80vw;
   margin-top: 3rem;
 }
 
-.profilePicLarge {
-  height: 60vh;
+.titleBox span {
+  color: #7a7a7a;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .profilePic {
+    height: 60vh;
+    width: auto;
+    margin-top: 0;
+  }
 }
