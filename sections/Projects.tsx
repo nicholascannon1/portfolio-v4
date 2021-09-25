@@ -2,7 +2,7 @@ import Section from "../components/Section";
 
 const ProjectsSection: React.FC = () => {
   return (
-    <Section>
+    <Section title="Projects">
       <h2>Projects</h2>
     </Section>
   );
