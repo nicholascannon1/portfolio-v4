@@ -8,7 +8,6 @@ const NotFound: NextPage = () => {
     <>
       <Head>
         <title>niccannon.com - Not Found</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.container}>
