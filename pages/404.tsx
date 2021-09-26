@@ -15,7 +15,7 @@ const NotFound: NextPage = () => {
         <p>
           Go back{" "}
           <Link href="/">
-            <a className={styles.link}>home</a>
+            <a>home</a>
           </Link>
         </p>
       </main>

@@ -58,6 +58,10 @@ const AboutSection: React.FC = () => {
           <img className={styles.badge} src="/imgs/aws-sysops.png" alt="AWS Certified SysOps Administrator" />
         </a>
       </div>
+
+      <a className={styles.resumeLink} target="_blank" href="/docs/resume.pdf">
+        resume
+      </a>
     </Section>
   );
 };

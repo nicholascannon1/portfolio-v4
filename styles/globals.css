@@ -14,7 +14,7 @@ body {
 
 a {
   color: inherit;
-  text-decoration: none;
+  color: #6495ed;
 }
 a:hover {
   cursor: pointer;
