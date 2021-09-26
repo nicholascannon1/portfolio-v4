@@ -1,0 +1,34 @@
+.container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.techTable {
+  flex: 1;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.tech {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tech img {
+  width: 150px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .techTable {
+    grid-template-columns: auto auto;
+  }
+
+  .tech img {
+    width: 100px;
+    margin: auto;
+  }
+}
