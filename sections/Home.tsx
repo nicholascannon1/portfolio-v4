@@ -11,7 +11,7 @@ const HomeSection: React.FC = () => {
         <span>Perth, Western Australia</span>
       </div>
 
-      <img className={styles.profilePic} src="/profilePic.jpg" alt="profile picture" />
+      <img className={styles.profilePic} src="/imgs/profilePic.jpg" alt="profile picture" />
     </Section>
   );
 };
