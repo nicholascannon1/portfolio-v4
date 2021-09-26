@@ -4,6 +4,9 @@ import styles from "../styles/hud.module.css";
 const SocialHud: React.FC = () => {
   return (
     <div className={styles.hud}>
+      <a href="mailto:nicholas.cannon1@gmail.com">
+        <img src="/imgs/email.svg" alt="email" />
+      </a>
       <a href="https://www.linkedin.com/in/niccannon1" target="_blank" rel="noopener noreferrer">
         <img src="/imgs/linkedin.svg" alt="linkedin" />
       </a>
