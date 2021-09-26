@@ -10,7 +10,7 @@ const AboutSection: React.FC = () => {
       <h3>experience</h3>
       <ul>
         <li>
-          <strong>Software Engineer at VGW (Chumba Casino)</strong> (Dec 2020 - Present)
+          <strong>Software Engineer at VGW</strong> [Chumba Casino] (Dec 2020 - Present)
           <ul>
             <li>Fullstack development with Node.js, TypeScript, PostgreSQL, AWS, Pulumi, Docker & React</li>
             <li>Associate engineer from Dec 2020 - Jun 2021, engineer from Jun 2021 - present</li>
