@@ -1,0 +1,19 @@
+.project {
+  margin: 0.5rem;
+}
+
+.project img {
+  width: 100%;
+}
+
+.project h4 {
+  margin-top: 0.5rem;
+}
+
+.links a {
+  margin-right: 1rem;
+}
+
+.techList {
+  display: flex;
+}
