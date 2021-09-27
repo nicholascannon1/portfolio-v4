@@ -23,7 +23,7 @@ const ProjectsSection: React.FC = () => {
           description="Previous iterations of my development site. v2 built using the MERN stack. v3 built fully serverless."
           technologies={["JS / TS", "AWS", "MERN", "Serverless", "Docker", "Node.js"]}
           github="https://github.com/nicholascannon1/portfolio-v3"
-          demoLink="link"
+          demoLink="https://old.niccannon.com"
         />
 
         <Project
@@ -31,7 +31,7 @@ const ProjectsSection: React.FC = () => {
           image="/imgs/projects/mello.png"
           description="A simple Trello clone with Google OAuth."
           technologies={["JavaScript", "MERN", "Docker", "Google OAuth"]}
-          github="github"
+          github="https://github.com/nicholascannon1/Mello"
         />
 
         <Project
