@@ -1,5 +1,5 @@
 {
-    "name": "portfolio-v4",
+    "name": "portfolio-v4-infra",
     "main": "src/index.ts",
     "devDependencies": {
         "@types/node": "^10.0.0"
