@@ -20,7 +20,7 @@ const ProjectsSection: React.FC = () => {
         <Project
           name="Portfolio v3 & v2"
           image="/imgs/projects/portfolio-v3-v2.png"
-          description="Previous iterations of my development site. v2 built using the MERN stack. v3 built fully serverless."
+          description="Previous iterations of my development site. v2 built using the MERN stack. v3 built fully serverless with the serverless framework."
           technologies={["JS / TS", "AWS", "MERN", "Serverless", "Docker", "Node.js"]}
           github="https://github.com/nicholascannon1/portfolio-v3"
           demoLink="https://old.niccannon.com"
