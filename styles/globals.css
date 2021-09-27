@@ -29,6 +29,8 @@ section {
   display: flex;
   flex-direction: column;
   padding: 2rem;
+
+  opacity: 0; /* for animation */
 }
 
 section > h3 {
