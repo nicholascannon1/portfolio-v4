@@ -1,0 +1,5 @@
+name: portfolio-v4
+runtime: nodejs
+description: Infrastructure for portfolio v4
+src: src/
+config: config/
