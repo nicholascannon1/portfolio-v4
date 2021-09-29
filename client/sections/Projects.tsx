@@ -18,6 +18,14 @@ const ProjectsSection: React.FC = () => {
         />
 
         <Project
+          name="B2Me"
+          image="/imgs/projects/b2me.png"
+          description="Startup I previously worked at. A social site for community based service providers."
+          technologies={["JavaScript", "React", "Node.js", "PostgreSQL"]}
+          demoLink="https://b2me.com.au/"
+        />
+
+        <Project
           name="Portfolio v3 & v2"
           image="/imgs/projects/portfolio-v3-v2.png"
           description="Previous iterations of my development site. v2 built using the MERN stack. v3 built fully serverless with the serverless framework."
@@ -32,14 +40,6 @@ const ProjectsSection: React.FC = () => {
           description="A simple Trello clone with Google OAuth."
           technologies={["JavaScript", "MERN", "Docker", "Google OAuth"]}
           github="https://github.com/nicholascannon1/Mello"
-        />
-
-        <Project
-          name="B2Me"
-          image="/imgs/projects/b2me.png"
-          description="Startup I previously worked at. A social site for community based service providers."
-          technologies={["JavaScript", "React", "Node.js", "PostgreSQL"]}
-          demoLink="https://b2me.com.au/"
         />
       </Grid>
     </Section>
