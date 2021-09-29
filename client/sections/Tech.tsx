@@ -17,7 +17,7 @@ const TechSection: React.FC = () => {
 
         <div className={styles.tech}>
           <img src="imgs/tech/typescript.svg" alt="TypeScript" title="TypeScript" />
-          <span>TypeScript / JavaScript</span>
+          <span>TypeScript</span>
         </div>
 
         <div className={styles.tech}>
