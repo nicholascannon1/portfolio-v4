@@ -8,7 +8,7 @@ const ProjectsSection: React.FC = () => {
     <Section title="Projects">
       <h2 style={{ marginBottom: "1rem" }}>projects</h2>
 
-      <Grid shrinkToSingleColumn={true}>
+      <Grid maxColWidth={4} shrinkToSingleColumn={true}>
         <Project
           name="Portfolio v4 (this site)"
           image="/imgs/projects/portfolio-v4.png"

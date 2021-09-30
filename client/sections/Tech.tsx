@@ -9,7 +9,7 @@ const TechSection: React.FC = () => {
       <h2>tech</h2>
       <h3>some of my favourites</h3>
 
-      <Grid>
+      <Grid maxColWidth={5}>
         <div className={styles.tech}>
           <img src="imgs/tech/aws.svg" alt="AWS" title="AWS" />
           <span>AWS</span>
@@ -48,6 +48,16 @@ const TechSection: React.FC = () => {
         <div className={styles.tech}>
           <img src="imgs/tech/redux.svg" alt="Redux" title="Redux" />
           <span>Redux</span>
+        </div>
+
+        <div className={styles.tech}>
+          <img src="imgs/tech/lambda.svg" alt="Lambda" title="Lambda" />
+          <span>AWS Lambda</span>
+        </div>
+
+        <div className={styles.tech}>
+          <img src="imgs/tech/serverless.svg" alt="Serverless" title="Serverless" />
+          <span>Serverless Framework</span>
         </div>
       </Grid>
     </Section>

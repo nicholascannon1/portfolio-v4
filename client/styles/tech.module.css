@@ -10,6 +10,10 @@
   margin: auto;
 }
 
+.tech span {
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .tech img {
     width: 100px;
