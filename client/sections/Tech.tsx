@@ -46,8 +46,8 @@ const TechSection: React.FC = () => {
         </div>
 
         <div className={styles.tech}>
-          <img src="imgs/tech/redux.svg" alt="Redux" title="Redux" />
-          <span>Redux</span>
+          <img src="imgs/tech/linux.svg" alt="Linux" title="Linux" />
+          <span>Linux</span>
         </div>
 
         <div className={styles.tech}>
@@ -56,8 +56,8 @@ const TechSection: React.FC = () => {
         </div>
 
         <div className={styles.tech}>
-          <img src="imgs/tech/serverless.svg" alt="Serverless" title="Serverless" />
-          <span>Serverless Framework</span>
+          <img src="imgs/tech/bash.svg" alt="Bash" title="Bash" />
+          <span>Bash</span>
         </div>
       </Grid>
     </Section>

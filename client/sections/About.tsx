@@ -41,10 +41,11 @@ const AboutSection: React.FC = () => {
 
       <h3>interests</h3>
       <ul>
-        <li>TypeScript / JavaScript / Node.js</li>
-        <li>AWS / Cloud Infrastructure / Serverless</li>
+        <li>TypeScript / Node.js</li>
+        <li>Python</li>
+        <li>AWS / Serverless</li>
+        <li>DevOps / Cloud Infrastructure</li>
         <li>FullStack Development</li>
-        <li>DevOps</li>
         <li>StartUps / Tech Business</li>
         <li>Basketball</li>
       </ul>
@@ -59,9 +60,9 @@ const AboutSection: React.FC = () => {
         </a>
       </div>
 
-      <a className={styles.resumeLink} target="_blank" href="/docs/resume.pdf">
+      {/* <a className={styles.resumeLink} target="_blank" href="/docs/resume.pdf">
         resume
-      </a>
+      </a> */}
     </Section>
   );
 };
