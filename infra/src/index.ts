@@ -49,6 +49,8 @@ const bucketPolicy = new aws.s3.BucketPolicy(`${prefix}-bucket-policy`, {
   ),
 });
 
+const CachingOptimizedPolicyId = "658327ea-f89d-4fab-a63d-7e88639e58f6";
+
 const distribution = new aws.cloudfront.Distribution(`portolio-distribution-${stack}`, {
   origins: [
     {
@@ -66,16 +68,8 @@ const distribution = new aws.cloudfront.Distribution(`portolio-distribution-${st
     allowedMethods: ["GET", "HEAD", "OPTIONS"],
     cachedMethods: ["GET", "HEAD"],
     targetOriginId: "portfolio-website",
-    forwardedValues: {
-      queryString: false,
-      cookies: {
-        forward: "none",
-      },
-    },
     viewerProtocolPolicy: "redirect-to-https",
-    minTtl: 0,
-    defaultTtl: 3600,
-    maxTtl: 3600,
+    cachePolicyId: CachingOptimizedPolicyId,
   },
   customErrorResponses: [
     {
