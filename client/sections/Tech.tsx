@@ -56,8 +56,8 @@ const TechSection: React.FC = () => {
         </div>
 
         <div className={styles.tech}>
-          <img src="imgs/tech/bash.svg" alt="Bash" title="Bash" />
-          <span>Bash</span>
+          <img src="imgs/tech/go.svg" alt="Go" title="Go" />
+          <span>Golang</span>
         </div>
       </Grid>
     </Section>
