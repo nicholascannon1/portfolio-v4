@@ -14,7 +14,7 @@ const ProjectsSection: React.FC = () => {
           image="/imgs/projects/portfolio-v4.png"
           description="Statically generated development portflio site."
           technologies={["TypeScript", "Next.js", "React", "AWS"]}
-          github="https://github.com/nicholascannon1/portfolio-v4"
+          github="https://github.com/nicholascannon/portfolio-v4"
         />
 
         <Project
@@ -30,7 +30,7 @@ const ProjectsSection: React.FC = () => {
           image="/imgs/projects/portfolio-v3-v2.png"
           description="Previous iterations of my development site. v2 built using the MERN stack. v3 built fully serverless with the serverless framework."
           technologies={["JS / TS", "AWS", "MERN", "Serverless", "Docker", "Node.js"]}
-          github="https://github.com/nicholascannon1/portfolio-v3"
+          github="https://github.com/nicholascannon/portfolio-v3"
           demoLink="https://old.niccannon.com/"
         />
 
@@ -39,7 +39,7 @@ const ProjectsSection: React.FC = () => {
           image="/imgs/projects/mello.png"
           description="A simple Trello clone with Google OAuth."
           technologies={["JavaScript", "MERN", "Docker", "Google OAuth"]}
-          github="https://github.com/nicholascannon1/Mello"
+          github="https://github.com/nicholascannon/Mello"
         />
       </Grid>
     </Section>

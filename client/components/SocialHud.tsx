@@ -10,7 +10,7 @@ const SocialHud: React.FC = () => {
       <a href="https://www.linkedin.com/in/niccannon1" target="_blank" rel="noopener noreferrer">
         <img src="/imgs/linkedin.svg" alt="linkedin" />
       </a>
-      <a href="https://github.com/nicholascannon1" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/nicholascannon" target="_blank" rel="noopener noreferrer">
         <img src="/imgs/github.svg" alt="github" />
       </a>
     </div>
