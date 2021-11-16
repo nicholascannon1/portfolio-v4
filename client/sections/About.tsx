@@ -13,7 +13,7 @@ const AboutSection: React.FC = () => {
           <strong>Software Engineer at VGW</strong> [Chumba Casino] (Dec 2020 - Present)
           <ul>
             <li>Fullstack development with Node.js, TypeScript, PostgreSQL, AWS, Pulumi, Docker & React</li>
-            <li>Associate engineer from Dec 2020 - Jun 2021, engineer from Jun 2021 - present</li>
+            <li>Associate engineer from Dec 2020 - Jun 2021, Engineer from Jun 2021 - present</li>
           </ul>
         </li>
         <li>
@@ -43,10 +43,9 @@ const AboutSection: React.FC = () => {
       <ul>
         <li>TypeScript / Node.js</li>
         <li>Python</li>
-        <li>AWS / Serverless</li>
-        <li>DevOps / Cloud Infrastructure</li>
+        <li>AWS / Cloud / DevOps</li>
         <li>FullStack Development</li>
-        <li>StartUps / Tech Business</li>
+        <li>Start Ups / Tech Business</li>
         <li>Basketball</li>
       </ul>
 

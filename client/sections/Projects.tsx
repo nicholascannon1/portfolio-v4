@@ -12,7 +12,7 @@ const ProjectsSection: React.FC = () => {
         <Project
           name="Portfolio v4 (this site)"
           image="/imgs/projects/portfolio-v4.png"
-          description="Statically generated development portflio site."
+          description="Statically generated development site."
           technologies={["TypeScript", "Next.js", "React", "AWS"]}
           github="https://github.com/nicholascannon/portfolio-v4"
         />
@@ -20,15 +20,15 @@ const ProjectsSection: React.FC = () => {
         <Project
           name="B2Me"
           image="/imgs/projects/b2me.png"
-          description="Startup I previously worked at. A social site for community based service providers."
-          technologies={["JavaScript", "React", "Node.js", "PostgreSQL"]}
+          description="A social site for community based service providers."
+          technologies={["JavaScript", "React", "Node.js", "PostgreSQL", "Cordova"]}
           demoLink="https://b2me.com.au/"
         />
 
         <Project
           name="Portfolio v3 & v2"
           image="/imgs/projects/portfolio-v3-v2.png"
-          description="Previous iterations of my development site. v2 built using the MERN stack. v3 built fully serverless with the serverless framework."
+          description="Previous iterations of this site."
           technologies={["JS / TS", "AWS", "MERN", "Serverless", "Docker", "Node.js"]}
           github="https://github.com/nicholascannon/portfolio-v3"
           demoLink="https://old.niccannon.com/"
