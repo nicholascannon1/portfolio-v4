@@ -46,8 +46,8 @@ const TechSection: React.FC = () => {
         </div>
 
         <div className={styles.tech}>
-          <img src="imgs/tech/linux.svg" alt="Linux" title="Linux" />
-          <span>Linux</span>
+          <img src="imgs/tech/vim.svg" alt="Vim" title="Vim" />
+          <span>Vim</span>
         </div>
 
         <div className={styles.tech}>
