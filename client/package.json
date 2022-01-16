@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "unset NEXT_PUBLIC_GOOGLE_ANALYTICS && next dev",
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
