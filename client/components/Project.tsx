@@ -14,25 +14,17 @@ interface Props {
 const Project = (props: Props) => {
   const { name, image, description, technologies, github, demoLink } = props;
   const hasLinks = github || demoLink;
+  const techList = technologies.length && technologies.slice(1).reduce((text, tech) => `${text}, ${tech}`, technologies[0]);
 
   return (
     <div className={styles.project}>
       <img src={image} alt={name} />
-      <h4>{name}</h4>
-      <p>{description}</p>
-      <div className={styles.techList}>
-        <ul>
-          {technologies.slice(0, technologies.length / 2).map((tech) => (
-            <li key={tech}>{tech}</li>
-          ))}
-        </ul>
 
-        <ul>
-          {technologies.slice(technologies.length / 2).map((tech) => (
-            <li key={tech}>{tech}</li>
-          ))}
-        </ul>
-      </div>
+      <h4>{name}</h4>
+
+      <p>{description}</p>
+
+      <p className={styles.techList}>{techList}</p>
 
       {hasLinks && (
         <div className={styles.links}>

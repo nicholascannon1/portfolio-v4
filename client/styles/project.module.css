@@ -10,8 +10,8 @@
   margin-top: 0.5rem;
 }
 
-.project ul {
-  width: 100%;
+.links {
+  margin-top: 0.5rem;
 }
 
 .links a {
@@ -19,5 +19,6 @@
 }
 
 .techList {
-  display: flex;
+  margin-top: 0.5rem;
+  font-style: italic;
 }
