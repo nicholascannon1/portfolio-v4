@@ -28,7 +28,7 @@ section {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 3rem;
 
   opacity: 0; /* for animation */
 }
@@ -50,7 +50,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 0 0 5rem 0;
 
   font-size: 15px;
   color: #7a7a7a;
