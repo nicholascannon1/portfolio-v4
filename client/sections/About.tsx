@@ -41,12 +41,11 @@ const AboutSection: React.FC = () => {
 
       <h3>interests</h3>
       <ul>
-        <li>TypeScript / Node.js</li>
-        <li>Python</li>
-        <li>AWS / Cloud / DevOps</li>
+        <li>TypeScript / JavaScript / Node.js</li>
+        <li>AWS / Cloud</li>
         <li>FullStack Development</li>
         <li>Start Ups / Tech Business</li>
-        <li>Basketball</li>
+        <li>Sports / Basketball</li>
       </ul>
 
       <h3>certifications</h3>
