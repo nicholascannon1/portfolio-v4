@@ -24,23 +24,6 @@ const ProjectsSection: React.FC = () => {
           technologies={["JavaScript", "React", "Node.js", "PostgreSQL", "Cordova"]}
           demoLink="https://b2me.com.au/"
         />
-
-        <Project
-          name="Portfolio v3 & v2"
-          image="/imgs/projects/portfolio-v3-v2.png"
-          description="Previous iterations of this site."
-          technologies={["JS / TS", "AWS", "MERN", "Serverless", "Docker", "Node.js"]}
-          github="https://github.com/nicholascannon/portfolio-v3"
-          demoLink="https://old.niccannon.com/"
-        />
-
-        <Project
-          name="Mello"
-          image="/imgs/projects/mello.png"
-          description="A simple Trello clone with Google OAuth."
-          technologies={["JavaScript", "MERN", "Docker", "Google OAuth"]}
-          github="https://github.com/nicholascannon/Mello"
-        />
       </Grid>
     </Section>
   );

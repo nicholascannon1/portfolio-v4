@@ -1,10 +1,10 @@
-import * as pulumi from "@pulumi/pulumi";
-import * as aws from "@pulumi/aws";
-import * as fs from "fs";
-import * as path from "path";
-import * as mime from "mime";
+import * as pulumi from '@pulumi/pulumi';
+import * as aws from '@pulumi/aws';
+import * as fs from 'fs';
+import * as path from 'path';
+import * as mime from 'mime';
 
-const IGNORED_FILES = [".DS_Store", ".env"];
+const IGNORED_FILES = ['.DS_Store', '.env'];
 
 const isDirectory = (filePath: string): boolean => fs.lstatSync(filePath).isDirectory();
 
@@ -23,12 +23,13 @@ export const syncWebsiteFiles = (
       const folderPath = folder === undefined ? file : path.join(folder, file);
       syncWebsiteFiles(filePath, bucket, tags, folderPath);
     } else {
-      new aws.s3.BucketObject(file, {
+      const fileKey = folder ? `${folder}/${file}` : file;
+      new aws.s3.BucketObject(fileKey, {
         bucket: bucket,
-        key: folder === undefined ? file : `${folder}/${file}`,
+        key: fileKey,
         source: new pulumi.asset.FileAsset(filePath),
         contentType: mime.getType(filePath) || undefined,
-        cacheControl: file === "index.html" ? "no-store" : "public", // never cache index.html
+        cacheControl: file === 'index.html' ? 'no-store' : 'public', // never cache index.html
         tags,
       });
     }
