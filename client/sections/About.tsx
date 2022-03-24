@@ -41,9 +41,9 @@ const AboutSection: React.FC = () => {
 
       <h3>interests</h3>
       <ul>
-        <li>TypeScript / JavaScript / Node.js</li>
+        <li>TypeScript / Node.js</li>
+        <li>Golang</li>
         <li>AWS / Cloud</li>
-        <li>FullStack Development</li>
         <li>Start Ups / Tech Business</li>
         <li>Sports / Basketball</li>
       </ul>
