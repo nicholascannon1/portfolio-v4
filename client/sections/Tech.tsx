@@ -9,7 +9,7 @@ const TechSection: React.FC = () => {
       <h2>tech</h2>
       <h3>some of the tools i like to work with</h3>
 
-      <Grid maxColWidth={5}>
+      <Grid maxColWidth={4}>
         <div className={styles.tech}>
           <img src="imgs/tech/aws.svg" alt="AWS" title="AWS" />
           <span>AWS</span>
@@ -17,22 +17,7 @@ const TechSection: React.FC = () => {
 
         <div className={styles.tech}>
           <img src="imgs/tech/typescript.svg" alt="TypeScript" title="TypeScript" />
-          <span>TypeScript</span>
-        </div>
-
-        <div className={styles.tech}>
-          <img src="imgs/tech/nodejs.svg" alt="Node.js" title="Node.js" />
-          <span>Node.js</span>
-        </div>
-
-        <div className={styles.tech}>
-          <img src="imgs/tech/react.svg" alt="React" title="React" />
-          <span>React</span>
-        </div>
-
-        <div className={styles.tech}>
-          <img src="imgs/tech/postgres.svg" alt="PostgreSQL" title="PostgreSQL" />
-          <span>PostgreSQL</span>
+          <span>TypeScript / Node.js</span>
         </div>
 
         <div className={styles.tech}>
@@ -46,13 +31,18 @@ const TechSection: React.FC = () => {
         </div>
 
         <div className={styles.tech}>
-          <img src="imgs/tech/vim.svg" alt="Vim" title="Vim" />
-          <span>Vim</span>
+          <img src="imgs/tech/postgres.svg" alt="PostgreSQL" title="PostgreSQL" />
+          <span>PostgreSQL</span>
         </div>
 
         <div className={styles.tech}>
-          <img src="imgs/tech/express.svg" alt="Express" title="Express" />
-          <span>Express</span>
+          <img src="imgs/tech/react.svg" alt="React" title="React" />
+          <span>React</span>
+        </div>
+
+        <div className={styles.tech}>
+          <img src="imgs/tech/vim.svg" alt="Vim" title="Vim" />
+          <span>Vim</span>
         </div>
 
         <div className={styles.tech}>
