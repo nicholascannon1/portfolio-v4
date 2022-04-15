@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import styles from "../styles/project.module.css";
 
 interface Props {
   name: string;
@@ -17,17 +16,17 @@ const Project = (props: Props) => {
   const techList = technologies.length && technologies.slice(1).reduce((text, tech) => `${text}, ${tech}`, technologies[0]);
 
   return (
-    <div className={styles.project}>
+    <div>
       <img src={image} alt={name} />
 
       <h4>{name}</h4>
 
       <p>{description}</p>
 
-      <p className={styles.techList}>{techList}</p>
+      <p>{techList}</p>
 
       {hasLinks && (
-        <div className={styles.links}>
+        <div>
           {github && (
             <a href={github} target="_blank" rel="noreferrer">
               github

@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import Section from "../components/Section";
-import styles from "../styles/about.module.css";
 
 const AboutSection: React.FC = () => {
   return (
@@ -51,14 +50,14 @@ const AboutSection: React.FC = () => {
       <h3>certifications</h3>
       <div>
         <a href="/docs/sa-cert.pdf" target="_blank" title="AWS Certified Solutions Architect">
-          <img className={styles.badge} src="/imgs/aws-saa.png" alt="AWS Certified Solutions Architect" />
+          <img src="/imgs/aws-saa.png" alt="AWS Certified Solutions Architect" />
         </a>
         <a href="/docs/sysops-cert.pdf" target="_blank" title="AWS Certified SysOps Administrator">
-          <img className={styles.badge} src="/imgs/aws-sysops.png" alt="AWS Certified SysOps Administrator" />
+          <img src="/imgs/aws-sysops.png" alt="AWS Certified SysOps Administrator" />
         </a>
       </div>
 
-      {/* <a className={styles.resumeLink} target="_blank" href="/docs/resume.pdf">
+      {/* <a target="_blank" href="/docs/resume.pdf">
         resume
       </a> */}
     </Section>

@@ -1,9 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import styles from "../styles/hud.module.css";
 
 const SocialHud: React.FC = () => {
   return (
-    <div className={styles.hud}>
+    <div>
       <a href="mailto:nicholas.cannon1@gmail.com">
         <img src="/imgs/email.svg" alt="email" />
       </a>

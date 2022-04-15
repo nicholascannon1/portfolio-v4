@@ -1,5 +1,4 @@
 import React from "react";
-import Grid from "../components/Grid";
 import Project from "../components/Project";
 import Section from "../components/Section";
 
@@ -8,7 +7,7 @@ const ProjectsSection: React.FC = () => {
     <Section title="Projects">
       <h2 style={{ marginBottom: "1rem" }}>projects</h2>
 
-      <Grid maxColWidth={4} shrinkToSingleColumn={true}>
+      <div>
         <Project
           name="Portfolio v4 (this site)"
           image="/imgs/projects/portfolio-v4.png"
@@ -24,7 +23,7 @@ const ProjectsSection: React.FC = () => {
           technologies={["JavaScript", "React", "Node.js", "PostgreSQL", "Cordova"]}
           demoLink="https://b2me.com.au/"
         />
-      </Grid>
+      </div>
     </Section>
   );
 };
