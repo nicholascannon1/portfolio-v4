@@ -7,10 +7,11 @@ const SITE_TITLE = "niccannon.com";
 
 interface PropTypes {
   children: React.ReactNode;
+  className?: string;
   title?: string;
 }
 
-const Section: React.FC<PropTypes> = ({ title = "", children }) => {
+const Section: React.FC<PropTypes> = ({ title = "", className, children }) => {
   const [hasBeenVisible, setHasBeenVisible] = useState(false);
   const ref = useRef<HTMLElement>(null);
   const visible = useIsVisible(ref, VISIBILITY_OFFSET);
@@ -22,7 +23,7 @@ const Section: React.FC<PropTypes> = ({ title = "", children }) => {
     <>
       <Head>{visible && <title>{websiteTitle}</title>}</Head>
 
-      <section ref={ref}>
+      <section className={`container min-h-screen mx-auto ${className}`} ref={ref}>
         {children}
       </section>
     </>

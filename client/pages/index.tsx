@@ -9,7 +9,7 @@ import SocialHud from "../components/SocialHud";
 const Home: NextPage = () => {
   return (
     <>
-      <SocialHud />
+      {/* <SocialHud /> */}
 
       <main>
         <HomeSection />
