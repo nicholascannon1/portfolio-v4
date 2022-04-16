@@ -6,7 +6,6 @@ import styles from "../styles/tech.module.css";
 const TechSection: React.FC = () => {
   return (
     <Section title="Tech">
-      <h2>tech</h2>
       <h3>some of the tools i like to work with</h3>
 
       <Grid maxColWidth={4}>

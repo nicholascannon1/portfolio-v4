@@ -5,8 +5,6 @@ import styles from "../styles/about.module.css";
 const AboutSection: React.FC = () => {
   return (
     <Section title="About">
-      <h2>about</h2>
-
       <h3>experience</h3>
       <ul>
         <li>
