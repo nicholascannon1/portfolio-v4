@@ -7,7 +7,7 @@ const HomeSection: React.FC = () => {
     <Section className={styles.container}>
       <div className={styles.titleBox}>
         <h1>Nicholas Cannon</h1>
-        <p>Software Developer</p>
+        <p>Full Stack Software Developer</p>
         <span>Perth, Western Australia</span>
       </div>
 
