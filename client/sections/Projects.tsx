@@ -24,6 +24,14 @@ const ProjectsSection: React.FC = () => {
           technologies={["JavaScript", "React", "Node.js", "PostgreSQL", "Cordova"]}
           link="https://b2me.com.au/"
         />
+
+        <Project
+          name="Chumba Casino"
+          image="/imgs/projects/chumba.png"
+          description="The fastest growing online social casino."
+          technologies={["TypeScript", "React", "Node.js", "PostgreSQL", "AWS", "Pulumi", "OpenTelemetry"]}
+          link="https://www.chumbacasino.com/"
+        />
       </Grid>
     </Section>
   );
