@@ -8,12 +8,12 @@ interface Props {
   description: string;
   technologies: string[];
   github?: string;
-  demoLink?: string;
+  link?: string;
 }
 
 const Project = (props: Props) => {
-  const { name, image, description, technologies, github, demoLink } = props;
-  const hasLinks = github || demoLink;
+  const { name, image, description, technologies, github, link } = props;
+  const hasLinks = github || link;
   const techList = technologies.length && technologies.slice(1).reduce((text, tech) => `${text}, ${tech}`, technologies[0]);
 
   return (
@@ -33,9 +33,9 @@ const Project = (props: Props) => {
               github
             </a>
           )}
-          {demoLink && (
-            <a href={demoLink} target="_blank" rel="noreferrer">
-              demo
+          {link && (
+            <a href={link} target="_blank" rel="noreferrer">
+              visit
             </a>
           )}
         </div>

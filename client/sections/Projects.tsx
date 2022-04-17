@@ -22,7 +22,7 @@ const ProjectsSection: React.FC = () => {
           image="/imgs/projects/b2me.png"
           description="Social site for community based service providers."
           technologies={["JavaScript", "React", "Node.js", "PostgreSQL", "Cordova"]}
-          demoLink="https://b2me.com.au/"
+          link="https://b2me.com.au/"
         />
       </Grid>
     </Section>
