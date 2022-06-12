@@ -15,8 +15,13 @@ const TechSection: React.FC = () => {
         </div>
 
         <div className={styles.tech}>
+          <img src="imgs/tech/nodejs.svg" alt="Node.js" title="Node.js" />
+          <span>Node.js</span>
+        </div>
+
+        <div className={styles.tech}>
           <img src="imgs/tech/typescript.svg" alt="TypeScript" title="TypeScript" />
-          <span>TypeScript / Node.js</span>
+          <span>TypeScript</span>
         </div>
 
         <div className={styles.tech}>
@@ -42,11 +47,6 @@ const TechSection: React.FC = () => {
         <div className={styles.tech}>
           <img src="imgs/tech/lambda.svg" alt="Lambda" title="Lambda / Serverless Tech" />
           <span>Lambda / Serverless Tech</span>
-        </div>
-
-        <div className={styles.tech}>
-          <img src="imgs/tech/python.svg" alt="Python" title="Python" />
-          <span>Python</span>
         </div>
       </Grid>
     </Section>
