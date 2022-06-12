@@ -26,14 +26,14 @@ const AboutSection: React.FC = () => {
       <h3>education</h3>
       <ul>
         <li>
-          <strong>Bachelor of Science</strong> - Majoring in Computer Science and Data Science (2017-2019)
-        </li>
-        <li>
           <strong>Bachelor of Science (Honours)</strong> - Computer Science and Software Engineering [Research in
           Machine Learning] (2020)
           <ul>
             <li>Awarded highest mark in Machine Learning (CITS5508) unit</li>
           </ul>
+        </li>
+        <li>
+          <strong>Bachelor of Science</strong> - Majoring in Computer Science and Data Science (2017-2019)
         </li>
       </ul>
 
