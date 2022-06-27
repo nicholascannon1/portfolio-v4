@@ -1,23 +1,23 @@
 .tech {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .tech img {
-  width: 150px;
-  margin: auto;
+    width: 150px;
+    margin: auto;
 }
 
 .tech span {
-  text-align: center;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
-  .tech img {
-    width: 100px;
-    margin: auto;
-    padding: 0.5rem;
-  }
+    .tech img {
+        width: 100px;
+        margin: auto;
+        padding: 0.5rem;
+    }
 }
