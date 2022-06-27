@@ -5,10 +5,9 @@ import { syncWebsiteFiles } from "./s3-utils";
 
 const BUILD_DIR = '../../client/out';
 
-const stack = pulumi.getStack();
-const project = pulumi.getProject();
-const prefix = `${project}-${stack}`;
 const config = new pulumi.Config();
+const stack = pulumi.getStack();
+const prefix = `${pulumi.getProject()}-${stack}`;
 
 const certStack = new pulumi.StackReference("nicholascannon1/portfolio-cert/prod");
 
