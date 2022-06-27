@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import styles from "../styles/project.module.css";
+import styles from "../../styles/project.module.css";
 
 interface Props {
   name: string;

@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
-import styles from "../styles/404.module.css";
+import styles from "../../styles/404.module.css";
 
 const NotFound: NextPage = () => {
   return (
