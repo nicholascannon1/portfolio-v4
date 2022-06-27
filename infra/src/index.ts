@@ -3,6 +3,8 @@ import * as aws from "@pulumi/aws";
 import * as path from "path";
 import { syncWebsiteFiles } from "./s3-utils";
 
+const BUILD_DIR = '../../client/out';
+
 const stack = pulumi.getStack();
 const project = pulumi.getProject();
 const prefix = `${project}-${stack}`;
@@ -10,7 +12,6 @@ const config = new pulumi.Config();
 
 const certStack = new pulumi.StackReference("nicholascannon1/portfolio-cert/prod");
 
-const clientBuildDir = config.require("client-build-dir");
 const zoneId = config.require("hosted-zone-id");
 const recordName = config.require("record-name");
 const cnameRecordName = `www.${recordName}`;
@@ -26,7 +27,7 @@ const bucket = new aws.s3.Bucket(`${prefix}-bucket`, {
   tags,
 });
 
-syncWebsiteFiles(path.join(__dirname, clientBuildDir), bucket, tags);
+syncWebsiteFiles(path.join(__dirname, BUILD_DIR), bucket, tags);
 
 const originAccessIdentity = new aws.cloudfront.OriginAccessIdentity(`${prefix}-oai`);
 
