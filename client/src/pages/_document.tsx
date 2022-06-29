@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/next-script-for-ga */
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-import environment from '../config';
+import config from '../config';
 
 class MyDocument extends Document {
     render() {
@@ -14,20 +14,20 @@ class MyDocument extends Document {
                         rel="stylesheet"
                     />
 
-                    {environment.googleAnalyticsCode && (
+                    {config.googleAnalyticsCode && (
                         <>
                             <script
                                 async
-                                src={`https://www.googletagmanager.com/gtag/js?id=${environment.googleAnalyticsCode}`}
+                                src={`https://www.googletagmanager.com/gtag/js?id=${config.googleAnalyticsCode}`}
                             />
                             <script
                                 dangerouslySetInnerHTML={{
                                     __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', "${environment.googleAnalyticsCode}", { page_path: window.location.pathname });
-              `,
+                                    window.dataLayer = window.dataLayer || [];
+                                    function gtag(){dataLayer.push(arguments);}
+                                    gtag('js', new Date());
+                                    gtag('config', "${config.googleAnalyticsCode}", { page_path: window.location.pathname });
+                                `,
                                 }}
                             />
                         </>
