@@ -5,7 +5,7 @@
 
 .profilePic {
     width: 100%;
-    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
 
 .titleBox span {
@@ -23,6 +23,5 @@
     .profilePic {
         height: 60vh;
         width: auto;
-        margin-top: 0;
     }
 }
