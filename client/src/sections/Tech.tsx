@@ -45,8 +45,8 @@ const TechSection: React.FC = () => {
                 </div>
 
                 <div className={styles.tech}>
-                    <img src="imgs/tech/lambda.svg" alt="Lambda" title="Lambda / Serverless Tech" />
-                    <span>Lambda / Serverless Tech</span>
+                    <img src="imgs/tech/vim.svg" alt="Vim" title="Vim" />
+                    <span>Vim</span>
                 </div>
             </Grid>
         </Section>
