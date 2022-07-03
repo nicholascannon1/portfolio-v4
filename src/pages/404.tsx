@@ -7,7 +7,7 @@ const NotFound: NextPage = () => {
     return (
         <>
             <Head>
-                <title>niccannon.com | Not Found</title>
+                <title>nicholascannon.com | Not Found</title>
             </Head>
 
             <main className={styles.container}>

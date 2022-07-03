@@ -4,7 +4,7 @@ import useIsVisible from '../hooks/useIsVisible';
 import styles from '../../styles/section.module.css';
 
 const VISIBILITY_OFFSET = '-45%';
-const SITE_TITLE = 'niccannon.com';
+const SITE_TITLE = 'nicholascannon.com';
 
 interface PropTypes {
     children: React.ReactNode;
