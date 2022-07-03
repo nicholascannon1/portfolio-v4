@@ -1,17 +1,32 @@
 {
     "name": "portfolio-v4",
-    "version": "0.0.1",
+    "description": "Statically generated website built with React, Next.js and TypeScript",
+    "version": "1.0.0",
     "author": "Nicholas Cannon",
     "private": true,
-    "description": "Statically generated portfolio website built with React, Next.js, TypeScript and AWS.",
     "scripts": {
-        "bootstrap": "concurrently \"npm install --prefix client\" \"npm install --prefix infra\"",
-        "start": "npm run dev --prefix client",
-        "build": "npm run build --prefix client",
-        "lint": "npm run lint --prefix client",
-        "deploy": "npm run build && cd infra && pulumi up"
+        "dev": "unset NEXT_PUBLIC_GOOGLE_ANALYTICS && next dev",
+        "build": "next build && next export",
+        "start": "next start",
+        "lint": "next lint --dir src"
+    },
+    "dependencies": {
+        "next": "11.1.2",
+        "react": "17.0.2",
+        "react-dom": "17.0.2"
     },
     "devDependencies": {
-        "concurrently": "^6.2.1"
+        "@types/react": "17.0.24",
+        "eslint": "7.32.0",
+        "eslint-config-next": "11.1.2",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.1.0",
+        "prettier": "^2.7.1",
+        "typescript": "4.4.3"
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "printWidth": 120,
+        "singleQuote": true
     }
 }
