@@ -10,14 +10,6 @@ const ProjectsSection: React.FC = () => {
 
             <Grid maxColWidth={4} shrinkToSingleColumn={true}>
                 <Project
-                    name="Portfolio v4 (this site)"
-                    image="/imgs/projects/portfolio-v4.png"
-                    description="Statically generated portfolio site."
-                    technologies={['TypeScript', 'Next.js', 'React', 'AWS', 'Pulumi']}
-                    github="https://github.com/nicholascannon/portfolio-v4"
-                />
-
-                <Project
                     name="B2Me"
                     image="/imgs/projects/b2me.png"
                     description="Social site for community based service providers."
