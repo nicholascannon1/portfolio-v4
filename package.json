@@ -5,7 +5,7 @@
     "author": "Nicholas Cannon",
     "private": true,
     "scripts": {
-        "dev": "unset NEXT_PUBLIC_GOOGLE_ANALYTICS && next dev",
+        "dev": "next dev",
         "build": "next build && next export",
         "start": "next start",
         "lint": "next lint --dir src"
