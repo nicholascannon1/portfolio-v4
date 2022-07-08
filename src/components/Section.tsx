@@ -3,7 +3,7 @@ import Head from 'next/head';
 import useIsVisible from '../hooks/useIsVisible';
 import styles from '../../styles/section.module.css';
 
-const VISIBILITY_OFFSET = '-45%';
+const VISIBILITY_OFFSET = '-35%';
 const SITE_TITLE = 'nicholascannon.com';
 
 interface PropTypes {
