@@ -1,7 +1,7 @@
 const Footer: React.FC = () => {
     return (
         <footer>
-            <span>nicholas cannon &copy;2021</span>
+            <span>nicholas cannon &copy;2022</span>
         </footer>
     );
 };
