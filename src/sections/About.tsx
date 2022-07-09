@@ -10,15 +10,21 @@ const AboutSection: React.FC = () => {
                 <li>
                     <strong>Software Engineer at VGW</strong> [Chumba Casino] (Dec 2020 - Present)
                     <ul>
-                        <li>Fullstack development with Node.js, TypeScript, PostgreSQL, AWS, Pulumi, Docker & React</li>
+                        <li>
+                            <strong>Stack:</strong> Node.js, TypeScript, PostgreSQL, AWS, Pulumi, Docker & React
+                        </li>
+                        <li>Fullstack development</li>
                         <li>Associate engineer from Dec 2020 - Jun 2021, Engineer from Jun 2021 - present</li>
                     </ul>
                 </li>
                 <li>
                     <strong>Junior Software Developer at B2Me</strong> [startup] (Jun 2019 - Dec 2020)
                     <ul>
-                        <li>Fullstack development with React, Node.js, PostgreSQL & Docker</li>
-                        <li>Developed and launched their iOS app</li>
+                        <li>
+                            <strong>Stack:</strong> Node.js, JavaScript, PostgreSQL, Docker & React
+                        </li>
+                        <li>Fullstack development</li>
+                        <li>Developed and launched iOS app with Cordova</li>
                     </ul>
                 </li>
             </ul>
@@ -39,11 +45,10 @@ const AboutSection: React.FC = () => {
 
             <h3>interests</h3>
             <ul>
-                <li>TypeScript / Node.js</li>
-                <li>Serverless</li>
-                <li>AWS / Cloud</li>
+                <li>TypeScript / Node.js / Fullstack JavaScript</li>
+                <li>AWS / Cloud / Serverless</li>
                 <li>Start Ups / Tech Business</li>
-                <li>Sports / Basketball</li>
+                <li>Sports / NBA / Formula 1</li>
             </ul>
 
             <h3>certifications</h3>
