@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import Section from '../components/Section';
 import styles from '../../styles/home.module.css';
 

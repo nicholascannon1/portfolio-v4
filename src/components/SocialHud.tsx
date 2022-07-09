@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import styles from '../../styles/hud.module.css';
 
 const SocialHud: React.FC = () => {
