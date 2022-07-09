@@ -6,7 +6,7 @@ import Section from '../components/Section';
 const ProjectsSection: React.FC = () => {
     return (
         <Section title="Projects">
-            <h3>projects that I&apos;ve worked on myself or have been involved in</h3>
+            <h3>projects that I&apos;ve been involved in</h3>
 
             <Grid maxColWidth={4} shrinkToSingleColumn={true}>
                 <Project
