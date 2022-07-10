@@ -1,17 +1,13 @@
 # Portfolio V4
 
-Statically generated portfolio website built with React, Next.js, TypeScript and AWS.
+Statically generated portfolio website built with React, Next.js and TypeScript.
 
--   `./client` - the Next.JS frontend client
+https://nicholascannon.com
 
--   `./infra` - Pulumi IaC to deploy to production
+## Running locally
 
-## Deploying
-
-Build client and deploy to production with:
-
-```
-npm run deploy
+```bash
+npm run dev
 ```
 
 ## Previous iterations
