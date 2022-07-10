@@ -10,7 +10,7 @@ import { SEO } from '../components/SEO';
 const Home: NextPage = () => {
     return (
         <>
-            <SEO title="nicholascannon.com" description="Nicholas Cannon software development" />
+            <SEO title="Nicholas Cannon" description="Nicholas Cannon software development" />
 
             <SocialHud />
 

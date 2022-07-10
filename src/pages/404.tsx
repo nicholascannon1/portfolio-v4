@@ -1,14 +1,12 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
 import Link from 'next/link';
 import styles from '../../styles/404.module.css';
+import { SEO } from '../components/SEO';
 
 const NotFound: NextPage = () => {
     return (
         <>
-            <Head>
-                <title>nicholascannon.com | Not Found</title>
-            </Head>
+            <SEO title="Not found!" description="Sorry this page could not be found!" />
 
             <main className={styles.container}>
                 <h2>Page not found</h2>
