@@ -5,7 +5,6 @@ class MyDocument extends Document {
         return (
             <Html>
                 <Head>
-                    <meta name="description" content="Nicholas Cannon Development Portfolio" />
                     <link rel="icon" href="/favicon.ico" />
                     <link
                         href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"

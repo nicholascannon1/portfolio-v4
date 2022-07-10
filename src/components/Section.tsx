@@ -4,7 +4,6 @@ import useIsVisible from '../hooks/useIsVisible';
 import styles from '../../styles/section.module.css';
 
 const VISIBILITY_OFFSET = '-35%';
-const SITE_TITLE = 'nicholascannon.com';
 
 interface PropTypes {
     children: React.ReactNode;
@@ -17,19 +16,16 @@ const Section: React.FC<PropTypes> = ({ title = '', children, className }) => {
     const ref = useRef<HTMLElement>(null);
     const visible = useIsVisible(ref, VISIBILITY_OFFSET);
 
-    if (visible && !hasBeenVisible) setHasBeenVisible(true);
-    const websiteTitle = title ? `${SITE_TITLE} | ${title.toLowerCase()}` : SITE_TITLE;
+    if (visible && !hasBeenVisible) {
+        setHasBeenVisible(true);
+    }
     const animationClassName = visible || hasBeenVisible ? styles.sectionFadeIn : '';
 
     return (
-        <>
-            <Head>{visible && <title>{websiteTitle}</title>}</Head>
-
-            <section className={`${className} ${animationClassName}`} ref={ref}>
-                {title && <h2>{title.toLowerCase()}</h2>}
-                {children}
-            </section>
-        </>
+        <section className={`${className} ${animationClassName}`} ref={ref}>
+            {title && <h2>{title.toLowerCase()}</h2>}
+            {children}
+        </section>
     );
 };
 
