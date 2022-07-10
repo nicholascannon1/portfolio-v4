@@ -8,8 +8,8 @@ const HomeSection: React.FC = () => {
 
             <div className={styles.titleBox}>
                 <h1>Nicholas Cannon</h1>
-                <p>Full Stack Software Developer</p>
-                <span>Perth, Western Australia</span>
+                <h2>Full Stack Software Developer</h2>
+                <h3>Perth, Western Australia</h3>
             </div>
         </Section>
     );
