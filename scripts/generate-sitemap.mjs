@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import { globbySync } from 'globby';
 
-const WEBSITE_URL = 'nicholascannon.com';
+const WEBSITE_URL = 'https://nicholascannon.com';
 
 /**
  *
