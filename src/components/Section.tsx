@@ -1,5 +1,4 @@
 import React, { useRef, useState } from 'react';
-import Head from 'next/head';
 import useIsVisible from '../hooks/useIsVisible';
 import styles from '../../styles/section.module.css';
 
@@ -22,7 +21,7 @@ const Section: React.FC<PropTypes> = ({ title = '', children, className }) => {
     const animationClassName = visible || hasBeenVisible ? styles.sectionFadeIn : '';
 
     return (
-        <section className={`${className} ${animationClassName}`} ref={ref}>
+        <section className={`${animationClassName} ${className || ''}`} ref={ref}>
             {title && <h2>{title.toLowerCase()}</h2>}
             {children}
         </section>

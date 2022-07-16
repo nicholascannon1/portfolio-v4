@@ -7,7 +7,7 @@ import ProjectsSection from '../sections/Projects';
 import SocialHud from '../components/SocialHud';
 import { SEO } from '../components/SEO';
 
-const Home: NextPage = () => {
+const Index: NextPage = () => {
     return (
         <>
             <SEO title="Nicholas Cannon" description="Nicholas Cannon software development" />
@@ -26,4 +26,4 @@ const Home: NextPage = () => {
     );
 };
 
-export default Home;
+export default Index;
