@@ -53,10 +53,18 @@ const AboutSection: React.FC = () => {
             <h3>certifications</h3>
             <div>
                 <a href="/docs/sa-cert.pdf" target="_blank" title="AWS Certified Solutions Architect">
-                    <img className={styles.badge} src="/imgs/aws-saa.png" alt="AWS Certified Solutions Architect" />
+                    <img
+                        className={styles.badge}
+                        src="/imgs/certs/aws-saa.png"
+                        alt="AWS Certified Solutions Architect"
+                    />
                 </a>
                 <a href="/docs/sysops-cert.pdf" target="_blank" title="AWS Certified SysOps Administrator">
-                    <img className={styles.badge} src="/imgs/aws-sysops.png" alt="AWS Certified SysOps Administrator" />
+                    <img
+                        className={styles.badge}
+                        src="/imgs/certs/aws-sysops.png"
+                        alt="AWS Certified SysOps Administrator"
+                    />
                 </a>
             </div>
 
