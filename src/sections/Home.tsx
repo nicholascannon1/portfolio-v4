@@ -4,7 +4,7 @@ import styles from '../../styles/home.module.css';
 const HomeSection: React.FC = () => {
     return (
         <Section className={styles.container}>
-            <img className={styles.profilePic} src="/imgs/profilePic.jpg" alt="profile picture" />
+            <img className={styles.profilePic} src="/imgs/profilePic.avif" alt="profile picture" />
 
             <div className={styles.titleBox}>
                 <h1>Nicholas Cannon</h1>
