@@ -11,7 +11,11 @@ interface Props {
 const Grid: React.FC<Props> = ({ children, className, shrinkToSingleColumn, maxColWidth }) => {
     const gridWidthClass = styles[`grid-width-${maxColWidth}`];
     return (
-        <div className={`${styles.container} ${className || ''}`}>
+        <div
+            className={`${styles.container} ${className || ''} ${
+                shrinkToSingleColumn ? styles.singleColContainer : ''
+            }`}
+        >
             <div className={`${styles.grid} ${gridWidthClass} ${shrinkToSingleColumn ? styles.singleCol : ''}`}>
                 {children}
             </div>

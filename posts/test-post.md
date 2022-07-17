@@ -1,8 +1,7 @@
 ---
 title: 'Test Post'
-metaTitle: 'Test Post'
-metaDesc: 'Testing out md posts'
-socialImage: imgs/posts/test-post.jpg
+description: 'Testing out md posts'
+image: imgs/posts/test-post.avif
 date: '2022-06-16'
 tags:
     - test
