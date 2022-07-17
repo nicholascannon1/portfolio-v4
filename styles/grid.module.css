@@ -28,4 +28,8 @@
     .singleCol {
         grid-template-columns: repeat(1, minmax(0, 1fr)) !important; /* keeps grid items equal width */
     }
+
+    .singleColContainer {
+        flex: unset;
+    }
 }
