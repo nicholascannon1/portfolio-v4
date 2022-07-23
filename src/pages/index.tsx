@@ -9,6 +9,7 @@ import HomeSection from '../sections/Home';
 import AboutSection from '../sections/About';
 import TechSection from '../sections/Tech';
 import BlogSection from '../sections/Blog';
+import { validateFrontmatter } from '../utils/validate-post';
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
@@ -28,7 +29,9 @@ export const getStaticProps = () => {
     const posts = fs.readdirSync('posts').map((post) => {
         const slug = post.replace('.md', '');
         const { data } = matter(fs.readFileSync(`posts/${post}`, 'utf-8'));
-        return { slug, frontmatter: data };
+        const frontmatter = validateFrontmatter(data);
+
+        return { slug, frontmatter };
     });
 
     return { props: { posts } };

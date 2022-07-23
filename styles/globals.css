@@ -46,6 +46,10 @@ ul li {
     margin: 5px 0;
 }
 
+ol {
+    padding-left: 40px;
+}
+
 footer {
     display: flex;
     flex-direction: column;
