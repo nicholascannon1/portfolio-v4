@@ -26,6 +26,7 @@
     max-width: 600px;
     margin: 0 auto;
     margin-top: 80px !important; /* clear header */
+    margin-bottom: 80px !important;
 }
 
 .content > * {
@@ -51,6 +52,6 @@
 
 @media (max-width: 768px) {
     .post {
-        margin: 2rem;
+        margin: 0 2rem;
     }
 }
