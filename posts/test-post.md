@@ -1,7 +1,7 @@
 ---
 title: 'Test Post'
 description: 'Testing out md posts'
-image: imgs/posts/test-post.avif
+image: /imgs/posts/test-post.avif
 date: '2022-06-16'
 tags:
     - test

@@ -32,7 +32,10 @@ const Post: NextPage<Props> = ({ content, frontmatter }) => {
 
     return (
         <Page title={title} description={description}>
-            <div className={styles.post} dangerouslySetInnerHTML={{ __html: markdown.render(content) }} />
+            <div className={styles.post}>
+                <img className={styles.postImage} src={image} alt={title} />
+                <div className={styles.content} dangerouslySetInnerHTML={{ __html: markdown.render(content) }} />
+            </div>
         </Page>
     );
 };
