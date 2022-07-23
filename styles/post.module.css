@@ -1,6 +1,31 @@
+.postHeader {
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+    padding: 0 2rem;
+
+    position: fixed;
+    top: 0;
+    width: 100vw;
+
+    background-color: white;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.postHeader a {
+    text-decoration: none;
+    color: unset;
+}
+.postHeader a:hover {
+    color: #7a7a7a7a;
+}
+
 .post {
     max-width: 600px;
     margin: 0 auto;
+    margin-top: 80px !important; /* clear header */
 }
 
 .content > * {

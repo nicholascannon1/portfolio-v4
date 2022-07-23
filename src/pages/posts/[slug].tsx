@@ -8,6 +8,7 @@ import { Frontmatter, validateFrontmatter } from '../../utils/validate-post';
 
 import styles from '../../../styles/post.module.css';
 import 'highlight.js/styles/github.css';
+import Link from 'next/link';
 
 type Params = {
     slug: string;
@@ -32,6 +33,12 @@ const Post: NextPage<Props> = ({ content, frontmatter }) => {
 
     return (
         <Page title={title} description={description}>
+            <header className={styles.postHeader}>
+                <Link href="/" passHref>
+                    <a>nicholas cannon</a>
+                </Link>
+            </header>
+
             <div className={styles.post}>
                 <img className={styles.postImage} src={image} alt={title} />
                 <div className={styles.content} dangerouslySetInnerHTML={{ __html: markdown.render(content) }} />
