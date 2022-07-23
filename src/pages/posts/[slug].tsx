@@ -1,9 +1,13 @@
+import type { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import * as fs from 'fs';
 import md from 'markdown-it';
 import matter from 'gray-matter';
-import type { GetStaticPaths, GetStaticProps, NextPage } from 'next';
+import hljs from 'highlight.js';
 import Page from '../../components/Page';
 import { Frontmatter, validateFrontmatter } from '../../utils/validate-post';
+
+import styles from '../../../styles/post.module.css';
+import 'highlight.js/styles/github.css';
 
 type Params = {
     slug: string;
@@ -16,10 +20,19 @@ type Props = {
 
 const Post: NextPage<Props> = ({ content, frontmatter }) => {
     const { title, date, description, image, tags } = frontmatter;
+    const markdown = md({
+        typographer: true,
+        highlight: (str, lang) => {
+            if (hljs.getLanguage(lang)) {
+                return hljs.highlight(str, { language: lang }).value;
+            }
+            return '';
+        },
+    });
 
     return (
         <Page title={title} description={description}>
-            <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
+            <div className={styles.post} dangerouslySetInnerHTML={{ __html: markdown.render(content) }} />
         </Page>
     );
 };

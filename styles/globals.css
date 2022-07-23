@@ -28,7 +28,7 @@ section {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    padding: 3rem;
+    padding: 2rem;
 
     opacity: 0; /* for animation */
 }
@@ -68,6 +68,10 @@ h3 {
 
 @media (max-width: 768px) {
     ul {
+        padding-left: 20px;
+    }
+
+    ol {
         padding-left: 20px;
     }
 }
