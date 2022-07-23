@@ -16,14 +16,17 @@
         "react-dom": "18.0.0"
     },
     "devDependencies": {
+        "@types/markdown-it": "^12.2.3",
         "@types/node": "^18.0.3",
         "@types/react": "17.0.24",
+        "ajv": "^8.11.0",
         "eslint": "7.32.0",
         "eslint-config-next": "11.1.2",
         "eslint-config-prettier": "^8.5.0",
         "eslint-plugin-prettier": "^4.1.0",
         "globby": "^13.1.2",
         "gray-matter": "^4.0.3",
+        "markdown-it": "^13.0.1",
         "prettier": "^2.7.1",
         "typescript": "4.4.3"
     },

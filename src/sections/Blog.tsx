@@ -3,10 +3,11 @@ import React from 'react';
 import Grid from '../components/Grid';
 import Section from '../components/Section';
 import styles from '../../styles/blog.module.css';
+import { Frontmatter } from '../utils/validate-post';
 
 type Post = {
     slug: string;
-    frontmatter: { [key: string]: any };
+    frontmatter: Frontmatter;
 };
 
 type Props = {
