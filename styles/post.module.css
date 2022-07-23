@@ -16,10 +16,10 @@
 
 .postHeader a {
     text-decoration: none;
-    color: unset;
+    color: #7a7a7a;
 }
 .postHeader a:hover {
-    color: #7a7a7a7a;
+    color: black;
 }
 
 .post {
