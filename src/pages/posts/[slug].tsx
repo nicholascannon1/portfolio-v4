@@ -41,6 +41,7 @@ const Post: NextPage<Props> = ({ content, frontmatter }) => {
 
             <div className={styles.post}>
                 <img className={styles.postImage} src={image} alt={title} />
+                <span>Published {date}</span>
                 <div className={styles.content} dangerouslySetInnerHTML={{ __html: markdown.render(content) }} />
             </div>
         </Page>
