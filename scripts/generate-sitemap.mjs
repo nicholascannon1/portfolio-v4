@@ -4,7 +4,6 @@ import { globbySync } from 'globby';
 const WEBSITE_URL = 'https://nicholascannon.com';
 
 /**
- *
  * @param {String} page
  */
 const getPageXml = (page) => {
