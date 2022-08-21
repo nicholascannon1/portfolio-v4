@@ -48,12 +48,15 @@ const Post: NextPage<Props> = ({ content, frontmatter }) => {
     );
 };
 
-export const getStaticPaths: GetStaticPaths = async () => {
-    const paths = fs.readdirSync('posts').map((fileName) => ({
-        params: {
-            slug: fileName.replace('.md', ''),
-        },
-    }));
+export const getStaticPaths: GetStaticPaths<Params> = async () => {
+    const paths = fs
+        .readdirSync('posts')
+        .filter((fileName) => fileName.startsWith('.') === false)
+        .map((fileName) => ({
+            params: {
+                slug: fileName.replace('.md', ''),
+            },
+        }));
 
     return { paths, fallback: false };
 };
