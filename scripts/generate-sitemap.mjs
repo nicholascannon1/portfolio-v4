@@ -21,7 +21,12 @@ const getPageXml = (page) => {
 };
 
 const generateSitemap = () => {
-    const pages = globbySync(['src/pages/**/*{.tsx, .mdx}', '!src/pages/_*.tsx', '!src/pages/api']);
+    const pages = globbySync([
+        'src/pages/**/*{.tsx, .mdx}',
+        '!src/pages/_*.tsx',
+        '!src/pages/api',
+        '!src/pages/**/[*.tsx',
+    ]);
     const sitemap = `
         <?xml version="1.0" encoding="UTF-8"?>
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
