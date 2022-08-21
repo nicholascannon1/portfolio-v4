@@ -24,8 +24,8 @@ const TechSection: React.FC = () => {
                 </div>
 
                 <div className={styles.tech}>
-                    <img src="imgs/tech/python.svg" alt="Python" title="Python" />
-                    <span>Python</span>
+                    <img src="imgs/tech/go.svg" alt="Go" title="Go" />
+                    <span>Go</span>
                 </div>
 
                 <div className={styles.tech}>
