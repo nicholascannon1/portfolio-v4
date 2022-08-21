@@ -18,7 +18,7 @@ const Index: NextPage<Props> = ({ posts }) => {
         <Page title="Nicholas Cannon" description="Nicholas Cannon software development">
             <HomeSection />
             <AboutSection />
-            {posts.length && <BlogSection posts={posts} />}
+            {posts.length ? <BlogSection posts={posts} /> : undefined}
             <TechSection />
             <ProjectsSection />
         </Page>
@@ -26,13 +26,16 @@ const Index: NextPage<Props> = ({ posts }) => {
 };
 
 export const getStaticProps = () => {
-    const posts = fs.readdirSync('posts').map((post) => {
-        const slug = post.replace('.md', '');
-        const { data } = matter(fs.readFileSync(`posts/${post}`, 'utf-8'));
-        const frontmatter = validateFrontmatter(data);
+    const posts = fs
+        .readdirSync('posts')
+        .filter((post) => post.startsWith('.'))
+        .map((post) => {
+            const slug = post.replace('.md', '');
+            const { data } = matter(fs.readFileSync(`posts/${post}`, 'utf-8'));
+            const frontmatter = validateFrontmatter(data);
 
-        return { slug, frontmatter };
-    });
+            return { slug, frontmatter };
+        });
 
     return { props: { posts } };
 };
