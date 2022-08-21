@@ -28,7 +28,7 @@ const Index: NextPage<Props> = ({ posts }) => {
 export const getStaticProps = () => {
     const posts = fs
         .readdirSync('posts')
-        .filter((post) => post.startsWith('.'))
+        .filter((post) => post.startsWith('.') === false)
         .map((post) => {
             const slug = post.replace('.md', '');
             const { data } = matter(fs.readFileSync(`posts/${post}`, 'utf-8'));
