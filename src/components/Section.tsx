@@ -4,13 +4,13 @@ import styles from '../../styles/section.module.css';
 
 const VISIBILITY_OFFSET = '-35%';
 
-interface PropTypes {
+interface Props {
     children: React.ReactNode;
     className?: string;
     title?: string;
 }
 
-const Section: React.FC<PropTypes> = ({ title = '', children, className }) => {
+const Section = ({ title = '', children, className }: Props) => {
     const [hasBeenVisible, setHasBeenVisible] = useState(false);
     const ref = useRef<HTMLElement>(null);
     const visible = useIsVisible(ref, VISIBILITY_OFFSET);

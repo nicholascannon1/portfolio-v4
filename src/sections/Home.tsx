@@ -1,7 +1,7 @@
 import Section from '../components/Section';
 import styles from '../../styles/home.module.css';
 
-const HomeSection: React.FC = () => {
+const HomeSection = () => {
     return (
         <Section className={styles.container}>
             <img className={styles.profilePic} src="/imgs/profilePic.jpg" alt="profile picture" />

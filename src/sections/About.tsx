@@ -1,7 +1,7 @@
 import Section from '../components/Section';
 import styles from '../../styles/about.module.css';
 
-const AboutSection: React.FC = () => {
+const AboutSection = () => {
     return (
         <Section title="About">
             <h3>experience</h3>

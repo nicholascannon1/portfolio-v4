@@ -14,7 +14,7 @@ type Props = {
     posts: Post[];
 };
 
-const BlogSection: React.FC<Props> = ({ posts }) => {
+const BlogSection = ({ posts }: Props) => {
     return (
         <Section className={styles.container} title="Technical Blog">
             <Grid maxColWidth={4} shrinkToSingleColumn={true}>

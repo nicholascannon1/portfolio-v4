@@ -2,7 +2,7 @@ import Grid from '../components/Grid';
 import Section from '../components/Section';
 import styles from '../../styles/tech.module.css';
 
-const TechSection: React.FC = () => {
+const TechSection = () => {
     return (
         <Section title="Tech">
             <h3>some of the tools i like to work with</h3>
