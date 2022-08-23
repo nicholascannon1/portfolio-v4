@@ -9,7 +9,7 @@ type Props = {
     description: string;
 };
 
-const Page: React.FC<Props> = ({ children, title, description }) => {
+const Page = ({ children, title, description }: Props) => {
     return (
         <>
             <SEO title={title} description={description} />

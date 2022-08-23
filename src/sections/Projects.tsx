@@ -3,7 +3,7 @@ import Grid from '../components/Grid';
 import Project from '../components/Project';
 import Section from '../components/Section';
 
-const ProjectsSection: React.FC = () => {
+const ProjectsSection = () => {
     return (
         <Section title="Projects">
             <h3>projects that I&apos;ve been involved in</h3>

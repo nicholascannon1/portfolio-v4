@@ -1,6 +1,6 @@
 import styles from '../../styles/hud.module.css';
 
-const SocialHud: React.FC = () => {
+const SocialHud = () => {
     return (
         <div className={styles.hud}>
             <a href="mailto:nicholas.cannon1@gmail.com">

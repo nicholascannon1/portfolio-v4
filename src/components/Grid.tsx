@@ -8,7 +8,7 @@ interface Props {
     maxColWidth: 4 | 5;
 }
 
-const Grid: React.FC<Props> = ({ children, className, shrinkToSingleColumn, maxColWidth }) => {
+const Grid = ({ children, className, shrinkToSingleColumn, maxColWidth }: Props) => {
     const gridWidthClass = styles[`grid-width-${maxColWidth}`];
     return (
         <div
