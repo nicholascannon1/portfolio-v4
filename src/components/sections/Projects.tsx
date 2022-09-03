@@ -1,7 +1,7 @@
 import React from 'react';
-import Grid from '../components/Grid';
-import Project from '../components/Project';
-import Section from '../components/Section';
+import Grid from '../Grid';
+import Project from '../Project';
+import Section from '../Section';
 
 const ProjectsSection = () => {
     return (

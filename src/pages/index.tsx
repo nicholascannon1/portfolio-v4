@@ -1,14 +1,12 @@
 import type { NextPage, InferGetStaticPropsType } from 'next';
-
 import * as fs from 'fs';
 import matter from 'gray-matter';
-
-import ProjectsSection from '../sections/Projects';
+import ProjectsSection from '../components/sections/Projects';
 import Page from '../components/Page';
-import HomeSection from '../sections/Home';
-import AboutSection from '../sections/About';
-import TechSection from '../sections/Tech';
-import BlogSection from '../sections/Blog';
+import HomeSection from '../components/sections/Home';
+import AboutSection from '../components/sections/About';
+import TechSection from '../components/sections/Tech';
+import BlogSection from '../components/sections/Blog';
 import { validateFrontmatter } from '../utils/validate-post';
 
 type Props = InferGetStaticPropsType<typeof getStaticProps>;

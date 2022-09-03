@@ -1,6 +1,6 @@
-import Grid from '../components/Grid';
-import Section from '../components/Section';
-import styles from '../../styles/tech.module.css';
+import Grid from '../Grid';
+import Section from '../Section';
+import styles from '../../../styles/tech.module.css';
 
 const TechSection = () => {
     return (
