@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import React from 'react';
-import Grid from '../components/Grid';
-import Section from '../components/Section';
-import styles from '../../styles/blog.module.css';
-import { Frontmatter } from '../utils/validate-post';
+import Grid from '../Grid';
+import Section from '../Section';
+import { Frontmatter } from '../../utils/validate-post';
+import styles from '../../../styles/blog.module.css';
 
 type Post = {
     slug: string;

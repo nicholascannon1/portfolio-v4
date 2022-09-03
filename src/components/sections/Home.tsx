@@ -1,5 +1,5 @@
-import Section from '../components/Section';
-import styles from '../../styles/home.module.css';
+import Section from '../Section';
+import styles from '../../../styles/home.module.css';
 
 const HomeSection = () => {
     return (

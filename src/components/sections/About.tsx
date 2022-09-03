@@ -1,5 +1,5 @@
-import Section from '../components/Section';
-import styles from '../../styles/about.module.css';
+import Section from '../Section';
+import styles from '../../../styles/about.module.css';
 
 const AboutSection = () => {
     return (
