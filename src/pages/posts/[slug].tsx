@@ -39,11 +39,11 @@ const Post: NextPage<Props> = ({ content, frontmatter }) => {
                 </Link>
             </header>
 
-            <div className={styles.post}>
+            <section className={styles.post}>
                 <img className={styles.postImage} src={image} alt={title} />
                 <span>Published {date}</span>
                 <div className={styles.content} dangerouslySetInnerHTML={{ __html: markdown.render(content) }} />
-            </div>
+            </section>
         </Page>
     );
 };

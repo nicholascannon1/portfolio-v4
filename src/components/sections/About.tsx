@@ -55,14 +55,14 @@ const AboutSection = () => {
                 <a href="/docs/sa-cert.pdf" target="_blank" title="AWS Certified Solutions Architect">
                     <img
                         className={styles.badge}
-                        src="/imgs/certs/aws-saa.png"
+                        src="/imgs/certs/aws-saa.webp"
                         alt="AWS Certified Solutions Architect"
                     />
                 </a>
                 <a href="/docs/sysops-cert.pdf" target="_blank" title="AWS Certified SysOps Administrator">
                     <img
                         className={styles.badge}
-                        src="/imgs/certs/aws-sysops.png"
+                        src="/imgs/certs/aws-sysops.webp"
                         alt="AWS Certified SysOps Administrator"
                     />
                 </a>

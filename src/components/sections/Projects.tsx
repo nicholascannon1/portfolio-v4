@@ -11,7 +11,7 @@ const ProjectsSection = () => {
             <Grid maxColWidth={4} shrinkToSingleColumn={true}>
                 <Project
                     name="B2Me"
-                    image="/imgs/projects/b2me.jpg"
+                    image="/imgs/projects/b2me.webp"
                     description="Social site for community based service providers."
                     technologies={['JavaScript', 'React', 'Node.js', 'PostgreSQL', 'Cordova']}
                     link="https://b2me.com.au/"
@@ -19,7 +19,7 @@ const ProjectsSection = () => {
 
                 <Project
                     name="Chumba Casino"
-                    image="/imgs/projects/chumba.jpg"
+                    image="/imgs/projects/chumba.webp"
                     description="The fastest growing online social casino."
                     technologies={['TypeScript', 'React', 'Node.js', 'PostgreSQL', 'AWS', 'Pulumi', 'OpenTelemetry']}
                     link="https://www.chumbacasino.com/"
