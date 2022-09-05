@@ -44,8 +44,8 @@ const TechSection = () => {
                 </div>
 
                 <div className={styles.tech}>
-                    <img src="imgs/tech/vim.svg" alt="Vim" title="Vim" />
-                    <span>Vim</span>
+                    <img src="imgs/tech/python.svg" alt="Python" title="Python" />
+                    <span>Python</span>
                 </div>
             </Grid>
         </Section>
