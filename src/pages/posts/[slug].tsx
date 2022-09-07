@@ -21,15 +21,6 @@ type Props = {
 
 const Post: NextPage<Props> = ({ content, frontmatter }) => {
     const { title, date, description, image, tags } = frontmatter;
-    const markdown = md({
-        typographer: true,
-        highlight: (str, lang) => {
-            if (hljs.getLanguage(lang)) {
-                return hljs.highlight(str, { language: lang }).value;
-            }
-            return '';
-        },
-    });
 
     return (
         <Page title={title} description={description}>
@@ -42,7 +33,7 @@ const Post: NextPage<Props> = ({ content, frontmatter }) => {
             <section className={styles.post}>
                 <img className={styles.postImage} src={image} alt={title} />
                 <span>Published {date}</span>
-                <div className={styles.content} dangerouslySetInnerHTML={{ __html: markdown.render(content) }} />
+                <div className={styles.content} dangerouslySetInnerHTML={{ __html: content }} />
             </section>
         </Page>
     );
@@ -68,9 +59,20 @@ export const getStaticProps: GetStaticProps<Props, Params> = ({ params }) => {
     }
 
     const post = fs.readFileSync(`posts/${slug}.md`, 'utf-8');
-    const { data, content } = matter(post);
+    const { data, content: rawContent } = matter(post);
 
     const frontmatter = validateFrontmatter(data);
+
+    const markdown = md({
+        typographer: true,
+        highlight: (str, lang) => {
+            if (hljs.getLanguage(lang)) {
+                return hljs.highlight(str, { language: lang }).value;
+            }
+            return '';
+        },
+    });
+    const content = markdown.render(rawContent);
 
     return {
         props: {
