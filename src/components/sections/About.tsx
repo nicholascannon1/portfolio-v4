@@ -68,9 +68,11 @@ const AboutSection = () => {
                 </a>
             </div>
 
-            {/* <a className={styles.resumeLink} target="_blank" href="/docs/resume.pdf">
-        resume
-      </a> */}
+            <div className={styles.resumeLink}>
+                <a target="_blank" href="/docs/resume.pdf" title="Nicholas Cannon Resume">
+                    Download my resume
+                </a>
+            </div>
         </Section>
     );
 };
