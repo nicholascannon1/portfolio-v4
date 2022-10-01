@@ -13,7 +13,8 @@ const AboutSection = () => {
                             <strong>Stack:</strong> Node.js, TypeScript, PostgreSQL, AWS, Pulumi, Docker & React
                         </li>
                         <li>Fullstack development</li>
-                        <li>Associate engineer from Dec 2020 - Jun 2021, Engineer from Jun 2021 - present</li>
+                        <li>Engineer from Jun 2021 - present</li>
+                        <li>Associate Engineer from Dec 2020 - Jun 2021</li>
                     </ul>
                 </li>
                 <li>
@@ -44,10 +45,10 @@ const AboutSection = () => {
 
             <h3>interests</h3>
             <ul>
-                <li>TypeScript / Node.js / Fullstack JavaScript</li>
-                <li>AWS / Cloud / Serverless</li>
-                <li>Start Ups / Tech Business</li>
-                <li>Sports / NBA / Formula 1</li>
+                <li>Node.js / Go</li>
+                <li>AWS / Cloud Computing</li>
+                <li>Start Ups / Entrepreneurship / Working lean</li>
+                <li>NBA / Formula 1</li>
             </ul>
 
             <h3>certifications</h3>
@@ -70,7 +71,7 @@ const AboutSection = () => {
 
             <div className={styles.resumeLink}>
                 <a target="_blank" href="/docs/resume.pdf" title="Nicholas Cannon Resume">
-                    Download my resume
+                    Get my resume!
                 </a>
             </div>
         </Section>
