@@ -18,7 +18,9 @@ const Project = (props: Props) => {
 
     return (
         <div className={styles.project}>
-            <img src={image} alt={name} />
+            <div className={styles.imgContainer}>
+                <img src={image} alt={name} />
+            </div>
 
             <h4>{name}</h4>
 

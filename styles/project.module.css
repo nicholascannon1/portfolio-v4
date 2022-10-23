@@ -22,3 +22,9 @@
     margin-top: 0.5rem;
     font-style: italic;
 }
+
+.imgContainer {
+    height: 195px;
+    display: flex;
+    align-items: center;
+}

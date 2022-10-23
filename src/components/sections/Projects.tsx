@@ -24,6 +24,14 @@ const ProjectsSection = () => {
                     technologies={['TypeScript', 'React', 'Node.js', 'PostgreSQL', 'AWS', 'Pulumi', 'OpenTelemetry']}
                     link="https://www.chumbacasino.com/"
                 />
+
+                <Project
+                    name="Event Sourced Ecommerce"
+                    image="https://raw.githubusercontent.com/nicholascannon/event-sourced-ecommerce/main/docs/diagrams/system-design.png"
+                    description="An event sourced ecommerce project for fun and learning"
+                    technologies={['TypeScript', 'Node.js', 'React', 'Postgres', 'Docker', 'ESBuild', 'Flyway']}
+                    link="https://github.com/nicholascannon/event-sourced-ecommerce"
+                />
             </Grid>
         </Section>
     );
