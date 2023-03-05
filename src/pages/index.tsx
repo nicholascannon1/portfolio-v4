@@ -17,8 +17,8 @@ const Index: NextPage<Props> = ({ posts }) => {
             <HomeSection />
             <AboutSection />
             {posts.length ? <BlogSection posts={posts} /> : undefined}
-            <TechSection />
             <ProjectsSection />
+            <TechSection />
         </Page>
     );
 };
