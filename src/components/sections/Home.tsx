@@ -8,7 +8,7 @@ const HomeSection = () => {
 
             <div className={styles.titleBox}>
                 <h1>Nicholas Cannon</h1>
-                <h2>Full Stack Software Developer</h2>
+                <h2>Software Engineer</h2>
                 <h3>Perth, Western Australia</h3>
             </div>
         </Section>
