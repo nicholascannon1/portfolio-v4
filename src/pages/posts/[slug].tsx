@@ -1,3 +1,4 @@
+import 'highlight.js/styles/github.css';
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import * as fs from 'fs';
 import md from 'markdown-it';
@@ -5,19 +6,9 @@ import matter from 'gray-matter';
 import hljs from 'highlight.js';
 import Page from '../../components/Page';
 import { Frontmatter, validateFrontmatter } from '../../utils/validate-post';
-
-import styles from '../../../styles/post.module.css';
-import 'highlight.js/styles/github.css';
 import Link from 'next/link';
 
-type Params = {
-    slug: string;
-};
-
-type Props = {
-    frontmatter: Frontmatter;
-    content: string;
-};
+import styles from '../../../styles/post.module.css';
 
 const Post: NextPage<Props> = ({ content, frontmatter }) => {
     const { title, date, description, image, tags } = frontmatter;
@@ -39,6 +30,11 @@ const Post: NextPage<Props> = ({ content, frontmatter }) => {
     );
 };
 
+type Props = {
+    frontmatter: Frontmatter;
+    content: string;
+};
+
 export const getStaticPaths: GetStaticPaths<Params> = async () => {
     const paths = fs
         .readdirSync('posts')
@@ -50,6 +46,10 @@ export const getStaticPaths: GetStaticPaths<Params> = async () => {
         }));
 
     return { paths, fallback: false };
+};
+
+type Params = {
+    slug: string;
 };
 
 export const getStaticProps: GetStaticProps<Props, Params> = ({ params }) => {
