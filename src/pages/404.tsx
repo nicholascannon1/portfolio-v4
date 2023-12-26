@@ -1,21 +1,26 @@
-import type { NextPage } from 'next';
+import { SEO } from '@/components/SEO';
+import { SocialHud } from '@/components/SocialHud';
 import Link from 'next/link';
-import styles from '../../styles/404.module.css';
-import Page from '../components/Page';
 
-const NotFound: NextPage = () => {
+const NotFound = () => {
     return (
-        <Page title="Not found!" description="Sorry this page could not be found!">
-            <div className={styles.container}>
-                <h2>Page not found</h2>
-                <p>
-                    Go back{' '}
-                    <Link href="/">
-                        <a>home</a>
-                    </Link>
-                </p>
-            </div>
-        </Page>
+        <>
+            <SEO title="Not found!" description="Sorry this page could not be found!" />
+
+            <SocialHud />
+
+            <main className="container">
+                <div>
+                    <h2>Page not found</h2>
+                    <p>
+                        Go back{' '}
+                        <Link href="/">
+                            <a>home</a>
+                        </Link>
+                    </p>
+                </div>
+            </main>
+        </>
     );
 };
 
