@@ -1,8 +1,6 @@
-import styles from '../../styles/hud.module.css';
-
-const SocialHud = () => {
+export const SocialHud = () => {
     return (
-        <div className={styles.hud}>
+        <div className="hud">
             <a href="mailto:nicholas.cannon1@gmail.com">
                 <img src="/imgs/socials/email.svg" alt="email" />
             </a>
@@ -15,5 +13,3 @@ const SocialHud = () => {
         </div>
     );
 };
-
-export default SocialHud;

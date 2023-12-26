@@ -1,12 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 
-type PropTypes = {
-    title: string;
-    description: string;
-};
-
-export const SEO = ({ title, description }: PropTypes) => {
+export const SEO = ({ title, description }: { title: string; description: string }) => {
     return (
         <Head>
             <title>{title}</title>
