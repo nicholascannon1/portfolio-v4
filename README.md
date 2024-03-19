@@ -7,7 +7,7 @@ https://nicholascannon.com
 ## Running locally
 
 ```bash
-npm run dev
+npm ci && npm run dev
 ```
 
 ## Previous iterations
