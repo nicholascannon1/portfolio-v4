@@ -1,5 +1,6 @@
 import { SEO } from '@/components/SEO';
 import { SocialHud } from '@/components/SocialHud';
+import { ServerRuntime } from 'next/types';
 
 const Index = () => {
     return (
@@ -16,3 +17,5 @@ const Index = () => {
 };
 
 export default Index;
+
+export const runtime: ServerRuntime = 'edge';
