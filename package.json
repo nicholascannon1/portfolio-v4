@@ -5,23 +5,23 @@
     "private": true,
     "scripts": {
         "dev": "next dev",
-        "build": "next build && next export",
+        "build": "next build",
         "start": "next start",
         "lint": "next lint --dir src"
     },
     "dependencies": {
-        "next": "12.2.1",
-        "react": "18.0.0",
-        "react-dom": "18.0.0"
+        "next": "^14.1.3",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
     },
     "devDependencies": {
         "@types/node": "^18.0.3",
-        "@types/react": "17.0.24",
-        "eslint": "7.32.0",
-        "eslint-config-next": "11.1.2",
-        "eslint-config-prettier": "^8.5.0",
-        "eslint-plugin-prettier": "^4.1.0",
-        "prettier": "^2.7.1",
-        "typescript": "4.4.3"
+        "@types/react": "^18.2.67",
+        "eslint": "^8.57.0",
+        "eslint-config-next": "^14.1.3",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-prettier": "^5.1.3",
+        "prettier": "^3.2.5",
+        "typescript": "^5.4.2"
     }
 }
