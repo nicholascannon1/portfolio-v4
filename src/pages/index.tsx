@@ -18,4 +18,4 @@ const Index = () => {
 
 export default Index;
 
-export const runtime: ServerRuntime = 'edge';
+export const runtime: ServerRuntime = 'experimental-edge';
