@@ -8,9 +8,9 @@ const Index = () => {
 
             <SocialHud />
 
-            <main className="container">
+            <div className="container">
                 <h1>Coming soon...</h1>
-            </main>
+            </div>
         </>
     );
 };
